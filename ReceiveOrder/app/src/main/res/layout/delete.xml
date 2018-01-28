@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:padding="2dp"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    android:layout_margin="10dp"
+    android:textColor="#D50000"
+    android:text="Delete Order Details"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:text="Please take Screenshot before deleting all the order details. "
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:text="Are you sure you want to delete ?"
+            />
+    </LinearLayout>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:id="@+id/cancel"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/dele"
+            android:text="CANCEL"
+            android:background="#4CAF50"
+            android:textColor="#FFFFFF"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="2dp"
+        android:id="@+id/dele"
+        android:layout_margin="10dp"
+        android:text="DELETE"
+        android:background="#D50000"
+        android:textColor="#FFFFFF"
+        /></RelativeLayout>
+</LinearLayout>

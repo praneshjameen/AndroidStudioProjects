@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    tools:context="com.example.pranesh.sendorder.SelectOrder"
+    android:orientation="vertical">
+
+    <Button
+    android:text="BEND"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bend"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="#0288D1"
+        android:textColor="#FFFFFF"
+         />
+
+
+
+    <Button
+        android:text="COUPLER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coupler"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="#0288D1"
+        android:textColor="#FFFFFF"
+        android:padding="5dp"
+        />
+    <Button
+        android:text="OFFSET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/offset"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="#0288D1"
+        android:textColor="#FFFFFF"
+        android:padding="5dp"
+        />
+    <Button
+        android:text="LONG COUPLER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/longc"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="#0288D1"
+        android:textColor="#FFFFFF"
+        android:padding="5dp"
+        />
+    <Button
+        android:text="REDUCER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reducer"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="#0288D1"
+        android:textColor="#FFFFFF"
+        android:padding="5dp"
+        />
+    <Button
+        android:text="JET NIPPLE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/jet"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="#0288D1"
+        android:textColor="#FFFFFF"
+        android:padding="5dp"
+        />
+
+    <Button
+        android:text="PROCEED TO ORDER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/proceed"
+
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+
+        android:background="#FF1744"
+        android:textColor="#FFFFFF"
+        android:padding="5dp" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="143dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+
+
+            android:onClick="home"
+            android:src="@drawable/home"
+            />
+</LinearLayout>

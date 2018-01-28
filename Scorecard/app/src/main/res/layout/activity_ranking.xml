@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ranking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="8dp"
+    android:paddingRight="6dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pranesh.scorecard.Ranking"
+    android:weightSum="1"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8"
+        android:orientation="horizontal"
+       >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Ranking"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:background="#0091EA"
+            android:textColor="@android:color/white"
+            android:paddingRight="0dp"
+            android:textAlignment="center"
+            android:padding="2dp" />
+
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Player Name"
+            android:textSize="25sp"
+android:layout_weight="4.68"
+
+            android:layout_width="wrap_content"
+            android:background="#0091EA"
+            android:textColor="@android:color/white"
+android:textAlignment="center"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:padding="2dp" />
+        <TextView
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:background="#0091EA"
+            android:textColor="@android:color/white"
+
+            android:padding="2dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="2"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:id="@+id/rank1"
+            android:textColor="#4A148C" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textColor="#4A148C"
+
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/rank2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/rank3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:id="@+id/rank4" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name4" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score4" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:id="@+id/rank5" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name5" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score5" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="2"
+            android:textColor="#4A148C"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:id="@+id/rank6" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name6" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score6" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="2"
+            android:textColor="#4A148C"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:id="@+id/rank7" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name7" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score7" />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="8">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="#4A148C"
+        android:layout_weight="2"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:id="@+id/rank8" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4A148C"
+        android:layout_weight="4"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:id="@+id/name8" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4A148C"
+        android:layout_weight="2"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:id="@+id/score8" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+
+            android:layout_weight="2"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:id="@+id/rank9" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name9" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score9" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:id="@+id/rank10" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name10" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:id="@+id/rank11" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name11" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score11" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/rank12" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name12" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score12" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/rank13" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name13" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score13" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+
+            android:layout_weight="2"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:id="@+id/rank14" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name14" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score14" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="2"
+            android:textColor="#4A148C"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:id="@+id/rank15" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name15" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score15" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="2"
+            android:textColor="#4A148C"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:id="@+id/rank16" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name16" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score16" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="2"
+            android:textColor="#4A148C"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:id="@+id/rank17" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name17" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score17" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:id="@+id/rank18" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name18" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score18" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:id="@+id/rank19" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name19" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score19" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:id="@+id/rank20" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="4"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/name20" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4A148C"
+            android:layout_weight="2"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:id="@+id/score20" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:layout_margin="4dp"
+            android:textSize="28sp"
+            android:background="#E53935"
+            android:textColor="#FFFFFF"
+            android:onClick="open"
+            android:id="@+id/btn" />
+
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>

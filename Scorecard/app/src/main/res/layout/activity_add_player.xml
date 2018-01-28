@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pranesh.scorecard.AddPlayer">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 1"
+                android:layout_weight="4"
+                android:id="@+id/p1" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:layout_weight="2"
+                android:id="@+id/s1"
+                android:inputType="number|numberSigned" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b1"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 2"
+                android:layout_weight="4"
+                android:id="@+id/p2" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s2" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b2"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 3"
+                android:layout_weight="4"
+                android:id="@+id/p3" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s3" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b3"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 4"
+                android:layout_weight="4"
+                android:id="@+id/p4" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s4" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b4"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 5"
+                android:layout_weight="4"
+                android:id="@+id/p5" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s5" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b5"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 6"
+                android:layout_weight="4"
+                android:id="@+id/p6" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s6" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b6"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 7"
+                android:layout_weight="4"
+                android:id="@+id/p7" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s7" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b7"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 8"
+                android:layout_weight="4"
+                android:id="@+id/p8" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s8" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b8"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 9"
+                android:layout_weight="4"
+                android:id="@+id/p9" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s9" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b9"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 10"
+                android:layout_weight="4"
+                android:id="@+id/p10" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s10" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b10"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 11"
+                android:layout_weight="4"
+                android:id="@+id/p11" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s11" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b11"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 12"
+                android:layout_weight="4"
+                android:id="@+id/p12" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s12" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b12"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 13"
+                android:layout_weight="4"
+                android:id="@+id/p13" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s13" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b13"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 14"
+                android:layout_weight="4"
+                android:id="@+id/p14" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s14" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b14"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 15"
+                android:layout_weight="4"
+                android:id="@+id/p15" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s15" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b15"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 16"
+                android:layout_weight="4"
+                android:id="@+id/p16" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s16" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b16"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 17"
+                android:layout_weight="4"
+                android:id="@+id/p17" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s17" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b17"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 18"
+                android:layout_weight="4"
+                android:id="@+id/p18" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s18" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b18"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 19"
+                android:layout_weight="4"
+                android:id="@+id/p19" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s19" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b19"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="7">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="player name 20"
+                android:layout_weight="4"
+                android:id="@+id/p20" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="score"
+                android:inputType="number|numberSigned"
+                android:layout_weight="2"
+                android:id="@+id/s20" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="save"
+                android:id="@+id/b20"
+                android:layout_weight="1"
+                android:background="#0091EA"
+                android:layout_margin="3sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:layout_margin="4dp"
+            android:text="RANKING board"
+            android:textColor="#FFFFFF"
+            android:background="#7B1FA2"
+            android:onClick="rank" />
+    </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
