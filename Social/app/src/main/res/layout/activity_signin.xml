@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zeolite.social.Signin"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+        <ImageView android:layout_width="130dp"
+            android:layout_height="170dp"
+            android:src="@drawable/ebook"/></LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp">
+        <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Register Number*"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:ems="13"
+        android:id="@+id/usr"
+
+        /></LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"><EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="User Name*"
+        android:textSize="20sp"
+
+        android:ems="13"
+        android:id="@+id/name"
+
+        /></LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"><EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="password*"
+        android:inputType="textPassword"
+        android:minEms="13"
+         android:maxEms="15"
+        android:textSize="20sp"
+        android:id="@+id/pass"
+
+        /></LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"><EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Retype-password*"
+        android:inputType="textPassword"
+        android:minEms="13"
+
+        android:maxEms="15"
+        android:textSize="20sp"
+        android:id="@+id/repass"
+
+        /></LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"><Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+
+        android:id="@+id/signup"
+
+        /></LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:paddingLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If your are an existing user? "
+
+
+
+            /><TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="log in "
+        android:clickable="true"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/loggin"
+        />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

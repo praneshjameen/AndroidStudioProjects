@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "736994519066",
+    "firebase_url": "https://social-43656.firebaseio.com",
+    "project_id": "social-43656",
+    "storage_bucket": "social-43656.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736994519066:android:4edc493e8cb2858b",
+        "android_client_info": {
+          "package_name": "com.example.zeolite.social"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736994519066-97b4t97udv93ua0nj1vvm3fblfv1vuqt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zeolite.social",
+            "certificate_hash": "bbcac7f7b7862cca8b475dacf9f86b2512238812"
+          }
+        },
+        {
+          "client_id": "736994519066-94jt2enum98194jggd962omj65vb44l5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW4gROg14VuSsvPNqkDDF9cWUyfFCcTNE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736994519066-94jt2enum98194jggd962omj65vb44l5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
