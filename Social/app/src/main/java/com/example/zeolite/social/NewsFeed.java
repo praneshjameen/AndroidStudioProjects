@@ -33,7 +33,7 @@ import java.util.Calendar;
 
 public class NewsFeed extends AppCompatActivity {
     StorageReference store;
-    DatabaseReference data,post;
+    DatabaseReference data,post,not;
     ImageView image;
     EditText capt;
     Uri imageU;
@@ -113,7 +113,9 @@ imageU=data.getData();
                      data.child(uploadId).setValue(img);
                     post = FirebaseDatabase.getInstance().getReference("Posts");
                      post.child(uploadId).setValue(img);
-                    Intent i=new Intent(NewsFeed.this,NewsfeedDisp.class);
+                     not=FirebaseDatabase.getInstance().getReference("Notification");
+                     not.child("status").setValue("uploaded");
+                    Intent i=new Intent(NewsFeed.this,Profile.class);
                     startActivity(i);
                 }
             }).addOnFailureListener(new OnFailureListener() {
