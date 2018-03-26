@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ContextMenu;
+import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,40 +31,32 @@ public class Profile extends AppCompatActivity {
     private ImageListAdapter2 adapter;
     private ProgressDialog progressDialog;
     private TextView proReg,proName;
-    private ImageView proUpl,proLogout,proNews;
+    private ImageView Noti,proNews;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         imgList=new ArrayList<>();
+        Noti=findViewById(R.id.Noti);
         iv=findViewById(R.id.proLi);
+
         proReg=findViewById(R.id.proReg);
         proName=findViewById(R.id.proName);
-        proUpl=findViewById(R.id.proUpl);
-        proLogout=findViewById(R.id.proLogout);
+
+
         proNews=findViewById(R.id.proNews);
         final Login a=new Login();
         proReg.setText(a.regNo());
         proName.setText(a.UsrName());
-        proLogout.setOnClickListener(new View.OnClickListener() {
+        Noti.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                a.loggedOut();
-                Intent n=new Intent(Profile.this,Login.class);
-                startActivity(n);
-
+                Intent i=new Intent(Profile.this,Notif.class);
+                startActivity(i);
             }
         });
-        proUpl.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                Intent n=new Intent(Profile.this,NewsFeed.class);
-                startActivity(n);
-
-            }
-        });
         proNews.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -86,7 +79,7 @@ public class Profile extends AppCompatActivity {
                     imgList.add(img);
                 }
                 dest=reverseListOrder(imgList);
-                adapter=new ImageListAdapter2(Profile.this,R.layout.image_item2,dest);
+                adapter=new ImageListAdapter2(Profile.this,R.layout.image_item2,R.layout.video_item2,dest);
                 iv.setAdapter(adapter);
                 registerForContextMenu(iv);
             }
@@ -104,6 +97,35 @@ public class Profile extends AppCompatActivity {
         super.onCreateContextMenu(menu, v, menuInfo);
         MenuInflater menuInflater=getMenuInflater();
         menuInflater.inflate(R.menu.menu_main2,menu);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu,menu);
+          return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id=item.getItemId();
+        switch (id)
+        {
+            case R.id.imgU:
+                Intent n=new Intent(Profile.this,NewsFeed.class);
+                startActivity(n);
+                break;
+            case R.id.vidU:
+                Intent n1=new Intent(Profile.this,Vid.class);
+                startActivity(n1);
+                break;
+            case R.id.log:
+                Login a=new Login();
+                a.loggedOut();
+                Intent n2=new Intent(Profile.this,Login.class);
+                startActivity(n2);
+                break;
+        }
+        return true;
     }
 
     @Override

@@ -23,7 +23,7 @@ public class NewsfeedDisp extends AppCompatActivity {
     private List<ImageUpload> imgList,dest;
     private ListView iv;
     private ImageListAdapter adapter;
-    private ImageView pro;
+    private ImageView pro,Noti;
     private ProgressDialog progressDialog;
 
     @Override
@@ -32,11 +32,19 @@ public class NewsfeedDisp extends AppCompatActivity {
         setContentView(R.layout.activity_newsfeed_disp);
         imgList=new ArrayList<>();
         iv=findViewById(R.id.list);
+        Noti=findViewById(R.id.Noti);
         pro=findViewById(R.id.pro);
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Please wait while loading the Newsfeed...");
         progressDialog.show();
         ref= FirebaseDatabase.getInstance().getReference("Posts");
+        Noti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(NewsfeedDisp.this,Notif.class);
+                startActivity(i);
+            }
+        });
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -47,7 +55,8 @@ public class NewsfeedDisp extends AppCompatActivity {
                     imgList.add(img);
                 }
                 dest=reverseListOrder(imgList);
-                adapter=new ImageListAdapter(NewsfeedDisp.this,R.layout.image_item,dest);
+                adapter=new ImageListAdapter(NewsfeedDisp.this,R.layout.image_item,R.layout.video_item,dest);
+
                 iv.setAdapter(adapter);
             }
 

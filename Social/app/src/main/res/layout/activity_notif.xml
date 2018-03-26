@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.zeolite.social.NewsfeedDisp"
-    >
+    tools:context="com.example.zeolite.social.Notif">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +14,7 @@
         android:layout_alignParentTop="true">
 
         <ListView
-            android:id="@+id/list"
+            android:id="@+id/notiList"
             android:dividerHeight="2dp"
             android:divider="#BDBDBD"
             android:layout_width="match_parent"
@@ -28,28 +27,30 @@
         android:orientation="horizontal"
         android:id="@+id/lin"
         android:layout_alignParentBottom="true">
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-
-        android:background="#C5CAE9"
-
-        android:orientation="vertical"
-        android:layout_gravity="bottom"
-
-        >
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:src="@drawable/newsfeed2"
-            />
-    </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+
+
+
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:id="@+id/news"
+                android:src="@drawable/newsfeed2"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#C5CAE9"
             android:orientation="vertical"
             android:layout_gravity="bottom"
 
@@ -62,20 +63,19 @@
                 android:id="@+id/Noti"
                 />
         </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:layout_gravity="bottom">
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ppl2"
-            android:layout_gravity="center"
-            android:id="@+id/pro"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ppl2"
+                android:layout_gravity="center"
+                android:id="@+id/pro"/>
+        </LinearLayout>
+
     </LinearLayout>
-
-</LinearLayout>
-
 </RelativeLayout>

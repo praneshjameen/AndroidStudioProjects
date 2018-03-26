@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/imgU"
+
+        android:title="Upload Image"
+        />
+    <item
+        android:id="@+id/vidU"
+
+        android:title="Upload Video"
+        />
+    <item
+        android:id="@+id/log"
+
+        android:title="Logout"
+        />
+</menu>

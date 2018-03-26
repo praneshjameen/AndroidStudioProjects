@@ -7,6 +7,11 @@ package com.example.zeolite.social;
 public class ImageUpload {
     public String name,pushKey,caption,tim,regNo;
     public String uri;
+    public int type;
+
+    public int getType() {
+        return type;
+    }
 
     public String getPushKey() {
         return pushKey;
@@ -32,13 +37,14 @@ public class ImageUpload {
         return uri;
     }
 
-    public ImageUpload(String name, String pushKey, String caption, String tim, String regNo, String uri) {
+    public ImageUpload(String name, String pushKey, String caption, String tim, String regNo, String uri,int type) {
         this.name = name;
         this.pushKey = pushKey;
         this.caption = caption;
         this.tim = tim;
         this.regNo = regNo;
         this.uri = uri;
+        this.type=type;
     }
 
     public ImageUpload(){}

@@ -1,21 +1,28 @@
 package com.example.zeolite.social;
 
 import android.app.ProgressDialog;
+
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
+import android.media.ThumbnailUtils;
 import android.net.Uri;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.MimeTypeMap;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -26,12 +33,13 @@ import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class NewsFeed extends AppCompatActivity {
+public class Vid extends AppCompatActivity {
     StorageReference store;
     DatabaseReference data,post,not;
     ImageView image;
@@ -41,7 +49,7 @@ public class NewsFeed extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_news_feed);
+        setContentView(R.layout.activity_vid);
         store = FirebaseStorage.getInstance().getReference();
 
 
@@ -52,9 +60,9 @@ public class NewsFeed extends AppCompatActivity {
 
     public void Browse(View v) {
         Intent intent = new Intent();
-        intent.setType("image/*");
+        intent.setType("video/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(Intent.createChooser(intent, "Select image"), 1234);
+        startActivityForResult(Intent.createChooser(intent, "Select VIDEO"), 1234);
     }
 
     @Override
@@ -62,22 +70,16 @@ public class NewsFeed extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==1234 && resultCode== RESULT_OK && data!=null &&data.getData()!=null)
         {
+
+
 imageU=data.getData();
-        try {
-            Bitmap bm= MediaStore.Images.Media.getBitmap(getContentResolver(),imageU);
-            image.setImageBitmap(bm);
-        }
-        catch (FileNotFoundException e)
-        {
-            e.printStackTrace();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
+            image.setImageDrawable(getResources().getDrawable(R.drawable.vid1));
+
         }
 
     }
+
+
     public String getUri(Uri U)
     {
         ContentResolver contentResolver =getContentResolver();
@@ -93,28 +95,28 @@ imageU=data.getData();
             final SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
             final ProgressDialog dialog=new ProgressDialog(this);
-            dialog.setTitle("Uploading image");
+            dialog.setTitle("Uploading video..");
             dialog.show();
-            StorageReference ref=store.child("image/"+System.currentTimeMillis()+"."+ getUri(imageU));
+            StorageReference ref=store.child("video/"+System.currentTimeMillis()+"."+ getUri(imageU));
             ref.putFile(imageU).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                     dialog.dismiss();
-                    Toast.makeText(getApplicationContext(),"Image Uploaded",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Video Uploaded",Toast.LENGTH_SHORT).show();
 
-                     Login b=new Login();
-                     String name=b.UsrName();
-                     String reg=b.regNo();
-                     String caption=capt.getText().toString();
+                    Login b=new Login();
+                    String name=b.UsrName();
+                    String reg=b.regNo();
+                    String caption=capt.getText().toString();
                     data = FirebaseDatabase.getInstance().getReference("Login").child(reg).child("Posts");
                     String uploadId=data.push().getKey();
                     String Dat = df.format(c.getTime());
-                    ImageUpload img=new ImageUpload(name,uploadId,caption,Dat,reg,taskSnapshot.getDownloadUrl().toString(),1);
-                     data.child(uploadId).setValue(img);
+                    ImageUpload img=new ImageUpload(name,uploadId,caption,Dat,reg,taskSnapshot.getDownloadUrl().toString(),2);
+                    data.child(uploadId).setValue(img);
                     post = FirebaseDatabase.getInstance().getReference("Posts");
-                     post.child(uploadId).setValue(img);
+                    post.child(uploadId).setValue(img);
 
-                    Intent i=new Intent(NewsFeed.this,Profile.class);
+                    Intent i=new Intent(Vid.this,Profile.class);
                     startActivity(i);
                 }
             }).addOnFailureListener(new OnFailureListener() {
@@ -126,14 +128,14 @@ imageU=data.getData();
             }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
                 @Override
                 public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
-                      double progress=(100 *taskSnapshot.getBytesTransferred())/taskSnapshot.getTotalByteCount();
-                      dialog.setMessage("Uploaded "+(int)progress+"%");
+                    double progress=(100 *taskSnapshot.getBytesTransferred())/taskSnapshot.getTotalByteCount();
+                    dialog.setMessage("Uploaded "+(int)progress+"%");
                 }
             });
         }
         else
         {
-            Toast.makeText(getApplicationContext(),"Please select an image",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Please select a video",Toast.LENGTH_SHORT).show();
         }
     }
 }

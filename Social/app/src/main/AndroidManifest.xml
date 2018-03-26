@@ -3,16 +3,18 @@
     package="com.example.zeolite.social">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
+        android:name=".App"
         android:allowBackup="true"
-        android:icon="@drawable/ebook"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/ebook"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:name=".App">
-        <service android:name=".Noti" ></service>
+        android:theme="@style/AppTheme">
+        <service android:name=".Noti" />
+
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,11 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".NewsFeed" />
         <activity android:name=".Signin" />
         <activity android:name=".NewsfeedDisp" />
-        <activity android:name=".Profile"></activity>
+        <activity android:name=".Profile" />
+        <activity android:name=".Vid" />
+        <activity android:name=".Notif"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1263465587",
+    "firebase_url": "https://post-1520944503976.firebaseio.com",
+    "project_id": "post-1520944503976",
+    "storage_bucket": "post-1520944503976.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1263465587:android:0e8bda6c5fb4fa33",
+        "android_client_info": {
+          "package_name": "com.example.zeolite.post"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1263465587-j34qsdign3g0l2af0aaslgl6lgr1qbms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8v0G3NmnqUhFVJQ70JHaI3sDemQU1y_I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
