@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "797552612130",
+    "firebase_url": "https://wounddetector.firebaseio.com",
+    "project_id": "wounddetector",
+    "storage_bucket": "wounddetector.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797552612130:android:2f0ec398c0b1f371",
+        "android_client_info": {
+          "package_name": "com.zeolite.wounddetector"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797552612130-tuldbcfq3dukmb65fl97nshgd86mehp8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zeolite.wounddetector",
+            "certificate_hash": "188173b099ccafbfba5e45d5ef450322bcf3d3c2"
+          }
+        },
+        {
+          "client_id": "797552612130-qpob78k7m3li03upv833nj3m20v55vgf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbwDLu6kj9_aQb-8-zDJZPpZMpnM-gcPU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797552612130-qpob78k7m3li03upv833nj3m20v55vgf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
